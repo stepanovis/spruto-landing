@@ -138,14 +138,37 @@
   footer {
     background: var(--dark);
     color: #D8D2CE;
-    padding: 48px 0;
-    font-size: 14px;
+    padding: 32px 0;
+    font-size: 13px;
   }
-  footer .section-label { color: var(--gold-light); }
-  footer p { max-width: 640px; }
+  section.flex-callout {
+    background: var(--gold);
+    color: #fff;
+    padding: 72px 0;
+  }
+  section.flex-callout .section-label { color: rgba(255,255,255,0.85); }
+  section.flex-callout h2 { color: #fff; font-size: 34px; max-width: 720px; }
+  section.flex-callout p.lede { color: rgba(255,255,255,0.92); max-width: 680px; }
+  .flex-points {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-top: 36px;
+  }
+  .flex-points div {
+    background: rgba(255,255,255,0.1);
+    border-radius: 8px;
+    padding: 22px 24px;
+  }
+  .flex-points b {
+    display: block;
+    font-size: 16.5px;
+    margin-bottom: 6px;
+  }
+  .flex-points p { margin: 0; font-size: 14.5px; color: rgba(255,255,255,0.88); }
   @media (max-width: 720px) {
     header.hero h1 { font-size: 32px; }
-    .two-col { grid-template-columns: 1fr; }
+    .two-col, .flex-points { grid-template-columns: 1fr; }
   }
 </style>
 </head>
@@ -158,6 +181,20 @@
     <p class="sub">Единая база контрактов, встроенный AI-анализ содержания, проверка по вашим правилам, аудиторский след — для организаций со сложной структурой и большим списком контрагентов.</p>
   </div>
 </header>
+
+<section class="flex-callout">
+  <div class="wrap">
+    <div class="section-label">Гибкость поставки</div>
+    <h2>Разворачиваем и обслуживаем систему там, где нужно вам</h2>
+    <p class="lede">Большинство CLM-платформ на рынке — готовая коробка: один способ развёртывания, один список интеграций, который вам предложат. Мы работаем иначе, и это не побочная опция, а то, вокруг чего построена платформа.</p>
+    <div class="flex-points">
+      <div><b>Развёртывание в вашем контуре</b><p>На вашей инфраструктуре, под вашим периметром безопасности — документы не покидают контур заказчика.</p></div>
+      <div><b>Доработка под ваш процесс</b><p>Не подгоняем ваш процесс под готовую коробку — дорабатываем платформу под конкретную задачу клиента.</p></div>
+      <div><b>Обслуживание и поддержка</b><p>Берём на себя эксплуатацию системы в контуре заказчика, а не только разовое внедрение.</p></div>
+      <div><b>Архитектура, а не обещание</b><p>Сильное ядро плюс расширения под задачу клиента заложены в структуру платформы с самого начала.</p></div>
+    </div>
+  </div>
+</section>
 
 <section>
   <div class="wrap">
@@ -267,8 +304,7 @@
 
 <footer>
   <div class="wrap">
-    <div class="section-label">Гибкость поставки</div>
-    <p>Мы открыты к доработке платформы под задачи конкретного клиента, а также к развёртыванию и обслуживанию системы в контуре заказчика.</p>
+    <p>Spruto — Contract Intelligence</p>
   </div>
 </footer>
 
