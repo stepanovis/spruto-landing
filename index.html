@@ -39,7 +39,23 @@
     background: var(--dark);
     color: #fff;
     padding: 72px 0 56px;
+    position: relative;
   }
+  .lang-switch {
+    position: absolute;
+    top: 24px;
+    right: 32px;
+    font-family: var(--font-mono);
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #D8D2CE;
+    text-decoration: none;
+    border: 1px solid rgba(255,255,255,0.25);
+    padding: 5px 12px;
+    border-radius: 4px;
+  }
+  .lang-switch:hover { color: #fff; border-color: rgba(255,255,255,0.5); }
   header.hero .label {
     font-family: var(--font-mono);
     font-size: 12px;
@@ -176,6 +192,7 @@
 <body>
 
 <header class="hero">
+  <a class="lang-switch" href="index-en.html">EN</a>
   <div class="wrap">
     <div class="label">Spruto · Contract Intelligence</div>
     <h1>Платформа для управления контрактами, которая сама читает договоры и находит в них риск</h1>
